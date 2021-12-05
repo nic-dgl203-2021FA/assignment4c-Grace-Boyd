@@ -4,4 +4,14 @@
   margin: 0%;
   padding: 0%;
 }
+
+.navbar-brand > img {
+  max-width: 80px;
+}
+
+.jumbotron {
+  background-image: url("../img/standin.png");
+  background-position: bottom center;
+  height: 100vh;
+}
 /*# sourceMappingURL=main.css.map */
