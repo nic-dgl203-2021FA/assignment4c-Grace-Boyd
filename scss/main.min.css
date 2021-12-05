@@ -1,2 +1,2 @@
-*{-webkit-box-sizing:border-box;box-sizing:border-box;margin:0%;padding:0%}.navbar-brand>img{max-width:80px}.jumbotron{background-image:url("../img/standin.png");background-position:bottom center;height:100vh}
+*{-webkit-box-sizing:border-box;box-sizing:border-box;margin:0%;padding:0%}.navbar{z-index:2}.navbar-brand>img{max-width:80px}.jumbotron{background-image:url("../img/fullscreen_stoat.svg");position:relative;height:100vh;background-attachment:fixed;background-position:center;background-repeat:no-repeat;background-size:cover}.jumbotron img{position:absolute;-ms-flex-item-align:baseline;align-self:baseline;height:auto;width:100vw;display:block;bottom:0;text-align:center;z-index:1}
 /*# sourceMappingURL=main.min.css.map */

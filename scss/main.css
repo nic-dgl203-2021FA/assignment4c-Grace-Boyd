@@ -5,13 +5,34 @@
   padding: 0%;
 }
 
+.navbar {
+  z-index: 2;
+}
 .navbar-brand > img {
   max-width: 80px;
 }
 
 .jumbotron {
-  background-image: url("../img/standin.png");
-  background-position: bottom center;
+  /* The image used */
+  background-image: url("../img/fullscreen_stoat.svg");
+  position: relative;
+  /* Full height */
   height: 100vh;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.jumbotron img {
+  position: absolute;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+  height: auto;
+  width: 100vw;
+  display: block;
+  bottom: 0;
+  text-align: center;
+  z-index: 1;
 }
 /*# sourceMappingURL=main.css.map */
