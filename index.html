@@ -13,21 +13,29 @@
 </head>
 
 <body data-spy="scroll" data-target="#navbar-site" data-offset="80">
-    <nav id="navbar-site" class="navbar navbar-dark bg-dark navbar-expand-sm
-            fixed-top">
+    <nav id="navbar-site" class="navbar navbar-light navbar-expand-sm
+            fixed-top justify-content-center">
         <div class="container">
-            <a href="#" class="navbar-brand">
-                <img src="img/grace_logo.png" alt="logo" />
-            </a>
+            <div class="d-block d-sm-none">
+                <a href="#home" class="navbar-brand">
+                    <img src="img/grace_logo.png" alt="logo" />
+                </a>
+            </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myTogglerNav" aria-controls="myTogglerNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-            <div class="collapse navbar-collapse" id="myTogglerNav">
+            <div class="collapse navbar-collapse justify-content-center
+                    pt-2" id="myTogglerNav">
                 <div class="navbar-nav">
                     <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
                     <a class="nav-item nav-link" href="#about">About</a>
-                    <a class="nav-item nav-link" href="#Skills">Skills</a>
+                    <div class="d-none d-xs-none d-sm-block">
+                        <a href="#home" class="navbar-brand">
+                            <img src="img/grace_logo.png" alt="logo" />
+                        </a>
+                    </div>
+                    <!-- <a class="nav-item nav-link" href="#Skills">Skills</a> -->
                     <a class="nav-item nav-link" href="#experience">Experience</a>
                     <a class="nav-item nav-link" href="#contact">Contact</a>
                 </div>
@@ -39,7 +47,7 @@
     </nav>
     <!-- nav -->
 
-    <div class="jumbotron">
+    <div class="jumbotron" id="home">
         <img src="img/stoat foreground.png" alt="stoat stoat" />
     </div>
     <!-- **********************************************  PORTFOLIO  ********************************************** -->
@@ -47,7 +55,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-6">
-                    <h3 id="portfolio" class="mb-3">Portfolio</h3>
+                    <h2 id="portfolio" class="mb-3">Portfolio</h2>
                 </div>
                 <div class="col-6 text-right">
                     <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
@@ -365,8 +373,8 @@
             src="https://code.jquery.com/jquery-3.2.1.slim.min.js "integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN "crossorigin="anonymous "></script>
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js "integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q "crossorigin="anonymous "></script>
-        <script
-            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js "integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl "crossorigin="anonymous "></script>
+        <!-- <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js "integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl "crossorigin="anonymous "></script> -->
         <script src="nav.js "></script>
     </body>
 </html>

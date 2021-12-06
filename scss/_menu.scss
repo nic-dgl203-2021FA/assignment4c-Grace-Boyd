@@ -1,8 +1,22 @@
 .navbar {
     z-index: 2;
+    background-color: $base-color;
+    border-color: $primary-color;
+    border-bottom: 2px solid;
+    border-color: $primary-color;
     &-brand>img {
         max-width: 80px;
     }
+    #myTogglerNav a {
+        color: $primary-color;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 1.2rem;
+    }
+}
+
+.d-none {
+    transform: translate(6px, -6px);
 }
 
 .jumbotron {

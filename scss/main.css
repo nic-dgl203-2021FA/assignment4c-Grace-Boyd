@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Eczar:wght@500;700&family=Merriweather:ital,wght@0,300;0,400;1,700&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -7,9 +8,24 @@
 
 .navbar {
   z-index: 2;
+  background-color: #ffcc99;
+  border-color: #cc6633;
+  border-bottom: 2px solid;
+  border-color: #cc6633;
 }
 .navbar-brand > img {
   max-width: 80px;
+}
+.navbar #myTogglerNav a {
+  color: #cc6633;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1.2rem;
+}
+
+.d-none {
+  -webkit-transform: translate(6px, -6px);
+          transform: translate(6px, -6px);
 }
 
 .jumbotron {
@@ -34,5 +50,17 @@
   bottom: 0;
   text-align: center;
   z-index: 1;
+}
+
+body {
+  font-family: "Merriweather", serif;
+  background-color: #ffcc99;
+  color: #330000;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Eczar", serif;
 }
 /*# sourceMappingURL=main.css.map */

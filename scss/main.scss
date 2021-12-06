@@ -1,2 +1,15 @@
 @import 'config',
 'menu';
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@500;700&family=Merriweather:ital,wght@0,300;0,400;1,700&display=swap');
+body {
+    font-family: 'Merriweather', serif;
+    background-color: $base-color;
+    color: $secondary-color;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Eczar', serif;
+    ;
+}
