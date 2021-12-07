@@ -189,6 +189,15 @@ h3 {
   text-align: center;
 }
 
+.contact_text {
+  padding-right: 9rem;
+  text-align: left;
+}
+.contact a {
+  text-decoration: none;
+  color: #330000;
+}
+
 @media (max-width: 991px) {
   .footer-dark .item.social {
     text-align: center;
@@ -231,6 +240,12 @@ textarea.form-control {
   margin-left: 57%;
 }
 
+@media screen and (max-width: 767px) {
+  form {
+    display: inline;
+    vertical-align: middle;
+  }
+}
 @media screen and (min-width: 1200px) {
   .about {
     text-align: left;
@@ -263,15 +278,6 @@ textarea.form-control {
   .skills {
     text-align: left !important;
     z-index: 2;
-  }
-
-  .contact_text {
-    padding-right: 9rem;
-    text-align: left;
-  }
-  .contact a {
-    text-decoration: none;
-    color: #330000;
   }
 }
 /*# sourceMappingURL=main.css.map */

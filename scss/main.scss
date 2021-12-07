@@ -97,6 +97,17 @@
         text-align: center;
     }
     
+    .contact {
+        &_text {
+            padding-right: 9rem;
+            text-align: left;
+        }
+        a {
+            text-decoration: none;
+            color: $secondary-color;
+        }
+    }
+    
     @media (max-width: 991px) {
         .footer-dark .item.social {
             text-align: center;
@@ -139,6 +150,13 @@
         margin-left: 57%;
     }
     
+    @include sm {
+        form {
+            display: inline;
+            vertical-align: middle;
+        }
+    }
+    
     @include xl {
         .about {
             text-align: left;
@@ -171,15 +189,5 @@
         .skills {
             text-align: left!important;
             z-index: 2;
-        }
-        .contact {
-            &_text {
-                padding-right: 9rem;
-                text-align: left;
-            }
-            a {
-                text-decoration: none;
-                color: $secondary-color;
-            }
         }
     }
