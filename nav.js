@@ -8,14 +8,14 @@ $(function() {
                 this.pathname.replace(/^\//, '') &&
                 location.hostname === this.hostname
             ) {
-                // var target = $(this.hash);
-                // target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                // if (target.length) {
-                //     $('html,body').animate({
-                //             scrollTop: target.offset().top - topoffset,
-                //         },
-                //         500
-                //     );
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                            scrollTop: target.offset().top - topoffset,
+                        },
+                        500
+                    );
                 return false;
             } //target.length
         } //click function
