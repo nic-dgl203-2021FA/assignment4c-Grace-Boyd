@@ -1,0 +1,118 @@
+  //  **********************************************  GENERAL **********************************************
+  @include sm {
+      form {
+          display: inline;
+          vertical-align: middle;
+      }
+  }
+  
+  @include xl {
+      .about {
+          text-align: left;
+          vertical-align: middle;
+          .col-xl-6 {
+              max-height: 600px;
+          }
+          &_lead,
+          &_text,
+          &_img,
+          &_title {
+              text-align: left;
+              vertical-align: middle;
+          }
+          &_lead {
+              line-height: 130%;
+              margin-right: 7rem;
+          }
+          &_text {
+              line-height: 190%;
+              margin-right: 7rem;
+          }
+      }
+      .awards {
+          text-align: right;
+      }
+      .education {
+          text-align: left;
+      }
+      .skills {
+          text-align: left!important;
+          z-index: 2;
+      }
+  }
+  
+  //  **********************************************  JUMBOTRON MEDIA RUlES  **********************************************
+  @media screen and (max-width: 1766px) and (min-width: 577px) {
+      .jumbotron {
+          img {
+              position: absolute;
+              align-self: baseline;
+              height: auto;
+              width: 130vw;
+              display: block;
+              bottom: 0;
+              text-align: center;
+              z-index: 1;
+              left: -14%;
+          }
+      }
+  }
+  
+  @media screen and (min-width: 1767px) {
+      .jumbotron {
+          img {
+              position: absolute;
+              align-self: baseline;
+              height: auto;
+              width: 100vw;
+              display: block;
+              bottom: 0;
+              text-align: center;
+              z-index: 1;
+          }
+      }
+  }
+  
+  @media screen and (max-width: 800px) and (min-width: 614px) {
+      .jumbotron {
+          img {
+              width: 190vw;
+              left: -40%;
+          }
+      }
+  }
+  
+  @media screen and (min-width: 614px) {
+      .jumbotron {
+          /* The image used */
+          background-image: url('../img/fullscreen_stoat2.svg');
+          position: relative;
+          /* Full height */
+          height: 100vh;
+          /* Create the parallax scrolling effect */
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+      }
+  }
+  
+  @media screen and (max-width: 614px) {
+      .jumbotron {
+          /* The image used */
+          background-image: url('../img/stoat_final.png');
+          position: relative;
+          /* Full height */
+          height: 100vh;
+          /* Create the parallax scrolling effect */
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+      }
+      .jumbotron {
+          img {
+              display: none;
+          }
+      }
+  }

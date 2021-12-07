@@ -61,6 +61,7 @@
 
 
     <!-- **********************************************  PORTFOLIO  ********************************************** -->
+    <!-- modifed form https://codepen.io/InamPK/pen/RwbdgyW -->
     <section class="pt-5 pb-5 my-5">
         <div class="container">
             <div class="row">
@@ -239,11 +240,11 @@
         <!--container-->
     </section>
     <!-- **********************************************  ABOUT  ********************************************** -->
-    <div id="about">
+    <div>
         <div class="container" class="about">
             <div class="row">
                 <div class="col-xl-6">
-                    <h2 class="display-3 about_title">About</h2>
+                    <h2 class="display-3 about_title" id="about">About</h2>
                     <h3 class="about_lead">As a design and development student, I’m learning new things every day and having fun doing it; I hear it never stops in this line of work.</h3>
                     <p class="about_text">
                         I started working towards a communication design diploma in 2020 and am expected to graduate in 2022. During this time, I’ve been honored to receive three separate bursaries and a 4.25 GPA. I have an affinity for working with the physical and hope to
@@ -254,9 +255,11 @@
                             boyd"></div>
             </div>
         </div>
-        <!-- **********************************************  Education  ********************************************** -->
+
+
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~education~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
         <div class="container">
-            <div class="row" id="Education">
+            <div class="row education" id="Education">
 
                 <div class="col-xl-6 education">
                     <h3 class="display-4">Education</h3>
@@ -299,7 +302,7 @@
             </div>
         </div>
     </div>
-    <!-- **********************************************  skills  ********************************************** -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~skills~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <div class="container py-5 skills text-center" id="skills">
         <h2 class="display-3 pb-4">Skills</h2>
         <div class="row">
@@ -397,8 +400,8 @@
                                         </div>
                                         <div>
                                             <button type="submit" class="btn
-                                                        btn-md btn-primary">Submit
-                                                        </button>
+                                                    btn-md btn-primary">Submit
+                                                </button>
                                         </div>
                                     </form>
                                 </div>
@@ -406,30 +409,20 @@
                         </div>
                     </div>
             </div>
-            </section>
+
         </div>
 
     </div>
-
-
-    </div>
-
-
-
-
-
-
-
 
     <!-- **********************************************  FOOTER  ********************************************** -->
     <!-- taken from https://bbbootstrap.com/snippets/bootstrap-dark-website-footer-social-media-icons-46403047 -->
     <div class="footer-dark">
         <footer>
             <div class="col item social"><a href="#"><i class="fa
-                            fa-facebook"></i></a><a href="#"><i class="fa
-                            fa-twitter"></i></a><a href="#"><i class="fa
-                            fa-youtube"></i></a><a href="#"><i class="fa
-                            fa-instagram"></i></a>
+                                fa-facebook"></i></a><a href="#"><i class="fa
+                                fa-twitter"></i></a><a href="#"><i class="fa
+                                fa-youtube"></i></a><a href="#"><i class="fa
+                                fa-instagram"></i></a>
                 <a href="#"><i class="fa fa-google"></i></a>
             </div>
         </footer>
@@ -438,7 +431,28 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="nav.js"></script>
+    <script>
+        $(function() {
+            var topoffset = 120; //variable for menu height
+
+            //Use smooth scrolling when clicking on navigation
+            $('.navbar-nav a').click(function() {
+                if (location.pathname.replace(/^\//, '') ===
+                    this.pathname.replace(/^\//, '') &&
+                    location.hostname === this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top - topoffset
+                        }, 500);
+                        return false;
+                    } //target.length
+                } //click function
+            }); //smooth scrolling
+
+        });
+    </script>
 </body>
 
 </html>

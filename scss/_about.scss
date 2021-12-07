@@ -1,0 +1,45 @@
+.about {
+    &_img {
+        width: auto;
+        height: 70%;
+    }
+}
+
+.about {
+    text-align: center;
+    vertical-align: middle;
+    &_lead,
+    &_text,
+    &_img,
+    &_title {
+        text-align: center;
+        vertical-align: middle;
+    }
+    &_lead {
+        padding-bottom: 1rem;
+    }
+    &_text {
+        line-height: 190%;
+    }
+    &_lead {
+        line-height: 130%;
+    }
+}
+
+#Education {
+    text-align: center;
+    vertical-align: middle;
+    margin-top: -9em;
+}
+
+#skills {
+    .list-group-item {
+        background-color: $hover;
+        color: $secondary-color;
+        &.active {
+            background-color: $primary-color;
+            border-color: $primary-color;
+            color: white;
+        }
+    }
+}

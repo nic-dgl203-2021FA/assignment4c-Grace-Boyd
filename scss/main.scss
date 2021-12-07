@@ -1,6 +1,10 @@
     @import 'config',
-    'menu';
+    'about',
+    'footer',
+    'media';
     @import url('https://fonts.googleapis.com/css2?family=Eczar:wght@500;700&family=Merriweather:ital,wght@0,300;0,400;1,700&display=swap');
+    //  **********************************************  UNIVERSIAL  **********************************************
+    //since I used a comboination of bootstrap & css some sections only have a couple rules so a partial seemed a little ridiculous, so all the sections that are short are in this file 
     body {
         font-family: 'Merriweather', serif;
         background-color: $base-color;
@@ -30,108 +34,45 @@
         }
     }
     
+    a.active {
+        color: $hover!important;
+    }
+    
+    .d-none {
+        transform: translate(6px, -6px);
+    }
+    
     .text-right {
         text-align: right;
     }
     
+    //  **********************************************  NAV **********************************************
+    .navbar {
+        z-index: 5;
+        background-color: $base-color;
+        border-bottom: 2px solid;
+        border-color: $primary-color;
+        &-brand>img {
+            max-width: 80px;
+        }
+        #myTogglerNav a {
+            color: $primary-color;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            font-size: 1.2rem;
+            &:hover {
+                color: $hover;
+            }
+        }
+    }
+    
+    //  **********************************************  PORFOLIO  **********************************************
     .card {
         background-color: $card;
         border-color: $card;
     }
     
-    .about {
-        &_img {
-            width: auto;
-            height: 70%;
-        }
-    }
-    
-    #skills {
-        .list-group-item {
-            background-color: $hover;
-            color: $secondary-color;
-            &.active {
-                background-color: $primary-color;
-                border-color: $primary-color;
-                color: white;
-            }
-        }
-    }
-    
-    .about {
-        text-align: center;
-        vertical-align: middle;
-        &_lead,
-        &_text,
-        &_img,
-        &_title {
-            text-align: center;
-            vertical-align: middle;
-        }
-        &_lead {
-            padding-bottom: 1rem;
-        }
-        &_text {
-            line-height: 190%;
-        }
-        &_lead {
-            line-height: 130%;
-        }
-    }
-    
-    #Education {
-        text-align: center;
-        vertical-align: middle;
-        margin-top: -9em;
-    }
-    /*~~~Footer~~~*/
-    /* taken from https://bbbootstrap.com/snippets/bootstrap-dark-website-footer-social-media-icons-46403047 */
-    
-    .footer-dark {
-        padding: 50px 0;
-        color: #f0f9ff;
-        background-color: $primary-color;
-    }
-    
-    .footer-dark .item.social {
-        text-align: center;
-    }
-    
-    .contact {
-        &_text {
-            padding-right: 9rem;
-            text-align: left;
-        }
-        a {
-            text-decoration: none;
-            color: $secondary-color;
-        }
-    }
-    
-    @media (max-width: 991px) {
-        .footer-dark .item.social {
-            text-align: center;
-            margin-top: 20px;
-        }
-    }
-    
-    .footer-dark .item.social>a {
-        width: 36px;
-        height: 36px;
-        line-height: 36px;
-        display: inline-block;
-        text-align: center;
-        border-radius: 50%;
-        box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
-        margin: 0 8px;
-        color: #fff;
-        opacity: 0.75;
-    }
-    
-    .footer-dark .item.social>a:hover {
-        opacity: 0.9;
-    }
-    
+    //  **********************************************  CONTACT  **********************************************
     input[type=text],
     input[type=tel],
     input[type=email],
@@ -148,46 +89,4 @@
     
     .btn-md {
         margin-left: 57%;
-    }
-    
-    @include sm {
-        form {
-            display: inline;
-            vertical-align: middle;
-        }
-    }
-    
-    @include xl {
-        .about {
-            text-align: left;
-            vertical-align: middle;
-            .col-xl-6 {
-                max-height: 600px;
-            }
-            &_lead,
-            &_text,
-            &_img,
-            &_title {
-                text-align: left;
-                vertical-align: middle;
-            }
-            &_lead {
-                line-height: 130%;
-                margin-right: 7rem;
-            }
-            &_text {
-                line-height: 190%;
-                margin-right: 7rem;
-            }
-        }
-        .awards {
-            text-align: right;
-        }
-        .education {
-            text-align: left;
-        }
-        .skills {
-            text-align: left!important;
-            z-index: 2;
-        }
     }
