@@ -1,7 +1,6 @@
 .navbar {
     z-index: 2;
     background-color: $base-color;
-    border-color: $primary-color;
     border-bottom: 2px solid;
     border-color: $primary-color;
     &-brand>img {
@@ -12,7 +11,14 @@
         padding-left: 1rem;
         padding-right: 1rem;
         font-size: 1.2rem;
+        &:hover {
+            color: $hover;
+        }
     }
+}
+
+a.active {
+    color: $hover!important;
 }
 
 .d-none {
