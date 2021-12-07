@@ -8,7 +8,7 @@
 }
 
 .navbar {
-  z-index: 2;
+  z-index: 5;
   background-color: #ffcc99;
   border-bottom: 2px solid;
   border-color: #cc6633;
@@ -135,6 +135,60 @@ h3 {
   vertical-align: middle;
 }
 
+/*~~~Footer~~~*/
+/* taken from https://bbbootstrap.com/snippets/bootstrap-dark-website-footer-social-media-icons-46403047 */
+.footer-dark {
+  padding: 50px 0;
+  color: #f0f9ff;
+  background-color: #cc6633;
+}
+
+.footer-dark .item.social {
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .footer-dark .item.social {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+.footer-dark .item.social > a {
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+          box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+  margin: 0 8px;
+  color: #fff;
+  opacity: 0.75;
+}
+
+.footer-dark .item.social > a:hover {
+  opacity: 0.9;
+}
+
+input[type=text],
+input[type=tel],
+input[type=email],
+textarea.form-control {
+  background-color: white;
+  width: 150%;
+  margin: auto auto;
+  color: rgba(204, 102, 51, 0.5);
+}
+
+.contact_text {
+  margin-bottom: 1rem;
+}
+
+.btn-md {
+  margin-left: 57%;
+}
+
 @media screen and (min-width: 1200px) {
   .about {
     text-align: left;
@@ -166,6 +220,16 @@ h3 {
 
   .skills {
     text-align: left !important;
+    z-index: 2;
+  }
+
+  .contact_text {
+    padding-right: 9rem;
+    text-align: left;
+  }
+  .contact a {
+    text-decoration: none;
+    color: #330000;
   }
 }
 /*# sourceMappingURL=main.css.map */
