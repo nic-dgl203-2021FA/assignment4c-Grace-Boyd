@@ -102,6 +102,16 @@ h3 {
   height: 70%;
 }
 
+#skills .list-group-item {
+  background-color: rgba(204, 102, 51, 0.5);
+  color: #330000;
+}
+#skills .list-group-item.active {
+  background-color: #cc6633;
+  border-color: #cc6633;
+  color: white;
+}
+
 .about {
   text-align: center;
   vertical-align: middle;
@@ -118,6 +128,11 @@ h3 {
 }
 .about_lead {
   line-height: 130%;
+}
+
+#Education {
+  text-align: center;
+  vertical-align: middle;
 }
 
 @media screen and (min-width: 1200px) {
@@ -139,6 +154,18 @@ h3 {
   .about_text {
     line-height: 190%;
     margin-right: 7rem;
+  }
+
+  .awards {
+    text-align: right;
+  }
+
+  .education {
+    text-align: left;
+  }
+
+  .skills {
+    text-align: left !important;
   }
 }
 /*# sourceMappingURL=main.css.map */

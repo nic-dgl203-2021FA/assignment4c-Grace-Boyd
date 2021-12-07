@@ -46,6 +46,18 @@
         }
     }
     
+    #skills {
+        .list-group-item {
+            background-color: $hover;
+            color: $secondary-color;
+            &.active {
+                background-color: $primary-color;
+                border-color: $primary-color;
+                color: white;
+            }
+        }
+    }
+    
     .about {
         text-align: center;
         vertical-align: middle;
@@ -65,6 +77,11 @@
         &_lead {
             line-height: 130%;
         }
+    }
+    
+    #Education {
+        text-align: center;
+        vertical-align: middle;
     }
     
     @include xl {
@@ -89,5 +106,14 @@
                 line-height: 190%;
                 margin-right: 7rem;
             }
+        }
+        .awards {
+            text-align: right;
+        }
+        .education {
+            text-align: left;
+        }
+        .skills {
+            text-align: left!important;
         }
     }
