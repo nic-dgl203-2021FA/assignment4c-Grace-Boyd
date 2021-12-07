@@ -25,28 +25,77 @@ a.active {
     transform: translate(6px, -6px);
 }
 
-.jumbotron {
-    // background-image: url('../img/standin.png');
-    // background-position: bottom center;
-    // height: 100vh;
-    /* The image used */
-    background-image: url('../img/fullscreen_stoat.svg');
-    position: relative;
-    /* Full height */
-    height: 100vh;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    img {
-        position: absolute;
-        align-self: baseline;
-        height: auto;
-        width: 100vw;
-        display: block;
-        bottom: 0;
-        text-align: center;
-        z-index: 1;
+@media screen and (max-width: 1766px) and (min-width: 577px) {
+    .jumbotron {
+        img {
+            position: absolute;
+            align-self: baseline;
+            height: auto;
+            width: 130vw;
+            display: block;
+            bottom: 0;
+            text-align: center;
+            z-index: 1;
+            left: -14%;
+        }
+    }
+}
+
+@media screen and (min-width: 1767px) {
+    .jumbotron {
+        img {
+            position: absolute;
+            align-self: baseline;
+            height: auto;
+            width: 100vw;
+            display: block;
+            bottom: 0;
+            text-align: center;
+            z-index: 1;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) and (min-width: 614px) {
+    .jumbotron {
+        img {
+            width: 190vw;
+            left: -40%;
+        }
+    }
+}
+
+@media screen and (min-width: 614px) {
+    .jumbotron {
+        /* The image used */
+        background-image: url('../img/fullscreen_stoat2.svg');
+        position: relative;
+        /* Full height */
+        height: 100vh;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 614px) {
+    .jumbotron {
+        /* The image used */
+        background-image: url('../img/stoat_final.png');
+        position: relative;
+        /* Full height */
+        height: 100vh;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .jumbotron {
+        img {
+            display: none;
+        }
     }
 }
