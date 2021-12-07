@@ -1,41 +1,93 @@
-@import 'config',
-'menu';
-@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@500;700&family=Merriweather:ital,wght@0,300;0,400;1,700&display=swap');
-body {
-    font-family: 'Merriweather', serif;
-    background-color: $base-color;
-    color: $secondary-color;
-}
-
-h1,
-h2,
-h3 {
-    font-family: 'Eczar', serif;
-    ;
-}
-
-.btn {
-    border-width: 3px;
-    &-primary {
-        background-color: $primary-color;
-        border-color: $primary-color;
-        font-weight: 500;
-        &:hover {
-            box-sizing: border-box;
-            background-color: $hover;
+    @import 'config',
+    'menu';
+    @import url('https://fonts.googleapis.com/css2?family=Eczar:wght@500;700&family=Merriweather:ital,wght@0,300;0,400;1,700&display=swap');
+    body {
+        font-family: 'Merriweather', serif;
+        background-color: $base-color;
+        color: $secondary-color;
+    }
+    
+    h1,
+    h2,
+    h3 {
+        font-family: 'Eczar', serif;
+        ;
+    }
+    
+    .btn {
+        border-width: 3px;
+        &-primary {
+            background-color: $primary-color;
             border-color: $primary-color;
-            color: $primary-color;
-            border-width: 3px;
             font-weight: 500;
+            &:hover {
+                box-sizing: border-box;
+                background-color: $hover;
+                border-color: $primary-color;
+                border-width: 3px;
+                font-weight: 500;
+            }
         }
     }
-}
-
-.text-right {
-    text-align: right;
-}
-
-.card {
-    background-color: $card;
-    border-color: $card;
-}
+    
+    .text-right {
+        text-align: right;
+    }
+    
+    .card {
+        background-color: $card;
+        border-color: $card;
+    }
+    
+    .about {
+        &_img {
+            width: auto;
+            height: 70%;
+        }
+    }
+    
+    .about {
+        text-align: center;
+        vertical-align: middle;
+        &_lead,
+        &_text,
+        &_img,
+        &_title {
+            text-align: center;
+            vertical-align: middle;
+        }
+        &_lead {
+            padding-bottom: 1rem;
+        }
+        &_text {
+            line-height: 190%;
+        }
+        &_lead {
+            line-height: 130%;
+        }
+    }
+    
+    @include xl {
+        .about {
+            text-align: left;
+            vertical-align: middle;
+            .col-xl-6 {
+                max-height: 600px;
+            }
+            &_lead,
+            &_text,
+            &_img,
+            &_title {
+                text-align: left;
+                vertical-align: middle;
+            }
+            &_lead {
+                line-height: 130%;
+                margin-right: 7rem;
+            }
+            &_text {
+                line-height: 190%;
+                margin-right: 7rem;
+            }
+        }
+    }

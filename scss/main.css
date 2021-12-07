@@ -84,7 +84,6 @@ h3 {
           box-sizing: border-box;
   background-color: rgba(204, 102, 51, 0.5);
   border-color: #cc6633;
-  color: #cc6633;
   border-width: 3px;
   font-weight: 500;
 }
@@ -96,5 +95,50 @@ h3 {
 .card {
   background-color: rgba(204, 102, 51, 0.3);
   border-color: rgba(204, 102, 51, 0.3);
+}
+
+.about_img {
+  width: auto;
+  height: 70%;
+}
+
+.about {
+  text-align: center;
+  vertical-align: middle;
+}
+.about_lead, .about_text, .about_img, .about_title {
+  text-align: center;
+  vertical-align: middle;
+}
+.about_lead {
+  padding-bottom: 1rem;
+}
+.about_text {
+  line-height: 190%;
+}
+.about_lead {
+  line-height: 130%;
+}
+
+@media screen and (min-width: 1200px) {
+  .about {
+    text-align: left;
+    vertical-align: middle;
+  }
+  .about .col-xl-6 {
+    max-height: 600px;
+  }
+  .about_lead, .about_text, .about_img, .about_title {
+    text-align: left;
+    vertical-align: middle;
+  }
+  .about_lead {
+    line-height: 130%;
+    margin-right: 7rem;
+  }
+  .about_text {
+    line-height: 190%;
+    margin-right: 7rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
